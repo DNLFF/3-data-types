@@ -7,3 +7,10 @@ function calculateMortgage(){
     let resTask1 = calculateTotalMortgage(percent, contribution, amount, date);
     document.getElementById("mortageResult").innerText = resTask1;
 }
+
+function sayHello(){
+    let name = document.getElementById("personName").value,
+    resTask2 = getGreeting(name);
+    document.getElementById("helloResult").innerText = resTask2;
+
+}

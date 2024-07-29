@@ -9,7 +9,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
     if(isNaN(parseInt(amount))){
         return `Параметр "Общая стоимость" содержит неправильное значение "${document.getElementById("amount").value}".`;
     }
-    
+
     const loanBody = amount - contribution,
     today = new Date(),
     dateInput = new Date(date),    
@@ -20,9 +20,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
     
     }
 
-
-
-
-
-
-
+function getGreeting(name) {
+    const greeting = `Привет, мир! Меня зовут ${name||"Аноним"}.`;
+    return greeting;
+}
